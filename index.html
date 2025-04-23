@@ -151,9 +151,12 @@
     </div>
   </div>
 
-  <!-- Seção Motivacional -->
+  <!-- Seção Motivacional com Imagem Primeiro -->
 <div class="motivation-section">
-  <div class="motivation-container">
+  <div class="motivation-container reverse">
+    <div class="motivation-image">
+      <img src="https://cursodeoratoriacompleto.com/wp-content/uploads/2022/08/modelo-oratoria-01.png" alt="Homem com megafone">
+    </div>
     <div class="motivation-text">
       <h2>A Barreira Silenciosa da Insegurança e o Caminho para a Transformação</h2>
       <p>
@@ -172,9 +175,6 @@
         Junte-se à nossa comunidade de comunicadores confiantes. Aqui, reconhecemos sua aflição, entendemos sua luta e, mais importante, temos o que você precisa.
       </p>
       <p><strong>Você está pronto(a) para dar um basta na insegurança e finalmente se destacar?</strong></p>
-    </div>
-    <div class="motivation-image">
-      <img src="https://cursodeoratoriacompleto.com/wp-content/uploads/2022/08/modelo-oratoria-01.png" alt="Homem com megafone">
     </div>
   </div>
 </div>
@@ -230,8 +230,10 @@
     max-width: 400px;
     border-radius: 12px;
   }
+
+  @media (max-width: 768px) {
+    .motivation-container {
+      flex-direction: column;
+    }
+  }
 </style>
-
-
-</body>
-</html>
